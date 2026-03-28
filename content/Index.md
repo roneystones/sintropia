@@ -1,5 +1,5 @@
 ---
 tags:
-  - publicado
+  - publicado/sincropia
 ---
 Bem-vindo à Sintropia
