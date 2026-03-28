@@ -8,27 +8,27 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Sintropia",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "pt-BR",
+    baseUrl: "sintropia.pages.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Schibsted Grotesque",
         code: "IBM Plex Mono",
+        body: "Crimson Pro",
       },
       colors: {
-        lightMode: {
+/*        lightMode: {
           light: "#faf8f8",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
@@ -49,6 +49,28 @@ const config: QuartzConfig = {
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
+        }, */
+
+        lightMode: {
+          light: "#fbfaf5",       // Fundo cor de papel (Off-white)
+          lightgray: "#e5e5e5",   // Bordas e divisores
+          gray: "#b8b8b8",        // Metadados e datas
+          darkgray: "#2d2d2d",    // Texto principal (Quase preto para contraste)
+          dark: "#1a3a32",        // Títulos (Verde floresta profundo)
+          secondary: "#8b4513",   // Links (Saddle Brown - tom de couro/biblioteca)
+          tertiary: "#556b2f",    // Destaques e hover (Dark Olive Green)
+          highlight: "rgba(139, 69, 19, 0.1)", // Cor de fundo ao selecionar
+        },
+
+        darkMode: {
+          light: "#121212",       // Fundo carvão profundo
+          lightgray: "#282828",   // Divisores suaves
+          gray: "#646464",        // Texto secundário
+          darkgray: "#d4d4d4",    // Texto principal claro
+          dark: "#a3b18a",        // Títulos (Sálvia claro)
+          secondary: "#bc6c25",   // Links (Tom de terracota)
+          tertiary: "#dda15e",    // Destaques
+          highlight: "rgba(188, 108, 37, 0.15)",
         },
       },
     },
