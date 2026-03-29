@@ -4,4 +4,6 @@ date modified: 19 Aug 2025
 tags: []
 title: Sintropia
 ---
-Teste
+Lorem ipsum dolor est
+
+![[sincropia-index.base]]

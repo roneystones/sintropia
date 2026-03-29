@@ -1,3 +1,24 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+body {
+  line-height: 1.65; // Aumenta o respiro entre linhas
+  letter-spacing: -0.01em; // Torna o texto mais elegante
+}
+
+p {
+  margin-bottom: 1.5em; // Maior separação entre parágrafos
+}
+
+.graph-view {
+  canvas {
+    // Aplica um filtro leve para harmonizar com o fundo papel (#fbfaf5)
+    opacity: 0.9;
+  }
+}
+
+// Melhora o espaçamento da coluna direita para não espremer os Backlinks
+.right {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}

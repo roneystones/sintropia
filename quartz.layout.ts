@@ -40,9 +40,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
+    Component.DesktopOnly(Component.TableOfContents({ 
+      layout: "stacked", 
+      minEntries: 3 // Só aparece se a nota tiver 3 ou mais cabeçalhos (H2/H3)
+    })),
     Component.Backlinks(),
+    Component.Graph(),
   ],
 }
 
@@ -65,7 +68,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),      // Adicione o Grafo na Home também
-    Component.Backlinks(),  // Adicione Backlinks na Home
+    Component.Backlinks(),  
+    Component.Graph(), 
   ],
 }
