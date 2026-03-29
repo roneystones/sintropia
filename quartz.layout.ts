@@ -8,8 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+        "Arroios Substack": "https://arroios.substack.com/"
     },
   }),
 }
@@ -60,9 +59,13 @@ export const defaultListPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() }, 
       ],
     }),
     Component.Explorer(),
   ],
-  right: [],
+  right: [
+    Component.Graph(),      // Adicione o Grafo na Home também
+    Component.Backlinks(),  // Adicione Backlinks na Home
+  ],
 }
