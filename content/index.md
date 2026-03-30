@@ -2,6 +2,6 @@
 date created: 15 Jun 2025
 date modified: 19 Aug 2025
 tags: []
-title: LOGOS & BITS
+title: Logos & Bits
 ---
 Lorem ipsum dolor est
